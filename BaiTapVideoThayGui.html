@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Sinh Viên</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            width: 800px;
+            height: 500px;
+        }
+        
+        .header {
+            background-color: #e49e79;
+            height: 150px;
+        }
+        
+        .header img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .main-container {
+            display: flex;
+        }
+        
+        .form-container {
+            width: 70%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .right-sidebar {
+            background-color: #808080;
+            width: 30%;
+        }
+        
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .radio-container {
+            margin-bottom: 20px;
+        }
+        
+        .radio-container input {
+            margin-right: 10px;
+        }
+        
+        .radio-container label {
+            font-size: 18px;
+            margin-right: 20px;
+        }
+        
+        .footer {
+            background-color: #e49e79;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="information-ha-long-bay-1(1).jpg" alt="Hạ Long Bay">
+    </div>
+
+    <div class="main-container">
+        <div class="form-container">
+            <h2>THÔNG TIN</h2>
+            <form>
+                <label for="ma-sinh-vien">Mã Sinh Viên:</label>
+                <input type="text" id="ma-sinh-vien" name="ma-sinh-vien" required>
+
+                <label for="ho-ten">Họ Tên:</label>
+                <input type="text" id="ho-ten" name="ho-ten" required>
+
+                <label for="ngay-sinh">Ngày Sinh:</label>
+                <input type="date" id="ngay-sinh" name="ngay-sinh" required>
+
+                <label for="que-quan">Quê Quán:</label>
+                <select id="que-quan" name="que-quan" required>
+                    <option value="">-- Chọn Tỉnh/Thành phố --</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="TP.Hồ Chí Minh">TP.Hồ Chí Minh</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Hải Phòng">Hải Phòng</option>
+                    <option value="Cần Thơ">Cần Thơ</option>
+                    <option value="Quảng Ninh">Quảng Ninh</option>
+                    <option value="Thanh Hóa">Thanh Hóa</option>
+                    <option value="Nghệ An">Nghệ An</option>
+                    <option value="Bình Dương">Bình Dương</option>
+                    <option value="Khánh Hòa">Khánh Hòa</option>
+                </select>
+
+                <div class="radio-container">
+                    <label>Giới Tính:</label>
+                    <input type="radio" id="nam" name="gioi-tinh" value="Nam" required>
+                    <label for="nam">Nam</label>
+                    <input type="radio" id="nu" name="gioi-tinh" value="Nữ" required>
+                    <label for="nu">Nữ</label>
+                </div>
+                <center>
+                    <button type="submit">Đăng Ký</button>
+                    <button type="reset">Hủy</button>
+                </center>
+            </form>
+        </div>
+        <div class="right-sidebar"></div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>
